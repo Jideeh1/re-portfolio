@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- DO NOT REMOVE ANY OF THESE -->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="fonts.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <aside class="sidebar">
+      <header class="sidebar-header">
+        <a href="#" class="header-logo">
+          <img src="Assets/Avatar.png" alt="" />
+        </a>
+        <div class="name">
+          <p>John Daniel Absalud</p>
+          <p class="role">Multimedia Artist/Developer</p>
+        </div>
+        <button class="toggler sidebar-toggler">
+          <span class="material-symbols-rounded"> chevron_left </span>
+        </button>
+        <button class="toggler menu-toggler">
+          <span class="material-symbols-rounded"> menu </span>
+        </button>
+      </header>
+
+      <nav class="sidebar-nav">
+        <!-- First Section in sidepanel nav-->
+        <ul class="nav-list primary-nav">
+          <li class="nav-item">
+            <a href="#" class="nav-link" data-section="explore">
+              <span class="nav-icon material-symbols-rounded">explore</span>
+              <span class="nav-label">Explore</span>
+            </a>
+            <span class="nav-tooltip">Explore</span>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link" data-section="experiences">
+              <span class="nav-icon material-symbols-rounded">work</span>
+              <span class="nav-label">Experiences</span>
+            </a>
+            <span class="nav-tooltip">Experiences</span>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link" data-section="projects">
+              <span class="nav-icon material-symbols-rounded">draw</span>
+              <span class="nav-label">Projects</span>
+            </a>
+            <span class="nav-tooltip">Projects</span>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link" data-section="services">
+              <span class="nav-icon material-symbols-rounded"
+                >design_services</span
+              >
+              <span class="nav-label">Services</span>
+            </a>
+            <span class="nav-tooltip">Services</span>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link" data-section="about">
+              <span class="nav-icon material-symbols-rounded">person</span>
+              <span class="nav-label">About</span>
+            </a>
+            <span class="nav-tooltip">About</span>
+          </li>
+        </ul>
+        <!-- Second Section in sidepanel nav -->
+        <ul class="nav-list secondary-nav">
+          <p class="section">Connect</p>
+          <li class="nav-item">
+            <a href="#" class="nav-link" data-section="contact">
+              <span class="nav-icon material-symbols-rounded">mail</span>
+              <span class="nav-label">Contact</span>
+            </a>
+            <span class="nav-tooltip">Contact</span>
+          </li>
+
+          <li class="nav-item">
+            <a
+              href="https://www.linkedin.com/in/john-daniel-absalud-507467190/"
+              target="_blank"
+              class="nav-link"
+            >
+              <span
+                class="fa fa-linkedin"
+                style="font-size: 20px; padding-left: 4px; padding-right: 3px"
+              ></span>
+              <span class="nav-label">Linkedin</span>
+            </a>
+            <span class="nav-tooltip">Linkedin</span>
+          </li>
+
+          <li class="nav-item">
+            <a
+              href="https://github.com/Jideeh1"
+              target="_blank"
+              class="nav-link"
+            >
+              <span
+                class="fa fa-github"
+                style="font-size: 20px; padding-left: 4px; padding-right: 3px"
+              ></span>
+              <span class="nav-label">Github</span>
+            </a>
+            <span class="nav-tooltip">Github</span>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    <section id="main-content" class="content"></section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
