@@ -1,3 +1,6 @@
+/* Please don't look at how messy */
+/* I do my styling :( */
+
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +13,7 @@ body {
     justify-content: center;
     align-items: center;
     background: #171717;
+    justify-content: center;
 }
 
 section {
@@ -33,7 +37,7 @@ footer {
     border-top-right-radius: 10px;
 
     .fp {
-        font-size: 12px !important;
+        font-size: 0.75rem !important;
         font-family: "open sans";
     } 
 }
@@ -64,7 +68,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 30px 20px 0;
+    padding: 30px 20px 0px 20px;
 
     .name {
         display: flex;
@@ -73,7 +77,7 @@ footer {
         font-size: 14px;
         padding: 3px 5px 0;
         margin: 0;
-        transition: display 1s ease;
+        width: auto;
         
         .role {
             font-size: 10px;
@@ -105,6 +109,11 @@ footer {
     transition: 0.4s ease;
 }
 
+.sidebar-header .sidebar-toggler .menu-toggler {
+    position: absolute;
+    right: 20px;
+}
+
 .sidebar.collapsed .toggler {
     border-right: 1px solid #f3f3f315;
 }
@@ -114,7 +123,7 @@ footer {
     transition: 0.7s ease;
 }
 
-.sidebar.collapsed .sidebar-header .toggler span {
+.sidebar.collapsed .sidebar-header .sidebar-toggler span {
     transform: rotate(180deg);
 }
 
@@ -134,10 +143,6 @@ footer {
 
 .sidebar-nav .nav-link .nav-label {
     transition: opacity 0.4s ease;
-}
-
-.sidebar-header .menu-toggler {
-    display: none;
 }
 
 .sidebar.collapsed .sidebar-nav .nav-link .nav-label {
@@ -177,11 +182,12 @@ footer {
 } q
 
 .sidebar-nav .name {
-    transition: display 1s ease;
+    width: 0;
 }
 
 .sidebar.collapsed .name {
-    display: none;
+    width: 0px;
+    opacity: 0;
 }
 
 .section {
@@ -221,10 +227,61 @@ footer {
     background: #2b2b2b;
 }
 
+.sidebar-header .menu-toggler {
+    display: none;
+}
+
 @media (max-width: 1024px) {
+    section {
+        margin: 0 auto !important;
+        padding: 100px 0px 0px 0px !important;
+        transition: 0.4s ease;
+        overflow-y: hidden;
+        
+    }
+    article {
+        overflow-y: hidden;
+        margin: 0 auto !important;
+        width: 90vw !important;
+        padding: 10px !important;
+        h1 {
+            font-size: 1.20rem !important;
+            margin-bottom: 0 !important;
+        }
+
+        .hsen {
+            font-size: 0.7rem !important;
+        }
+
+        ul {
+            width: 80vw !important;
+        }
+
+        p {
+            padding-top: 10px !important;
+            width: 80vw !important;
+        }
+    }
+
+    ul li {
+        padding-top: 10px !important;
+        width: 80vw !important;
+    }
+    
+
+    .infobox {
+        overflow-y: hidden;
+        margin: 0 auto !important;
+        width: 85vw !important;
+    }
+    
     .sidebar {
+        height: 56px;
+        overflow-y: hidden;
+        scrollbar-width: none;
         margin: 13px;
         width: calc(100% - 26px);
+        max-height: calc(100vh - 26px);
     }
 
     .sidebar-header {
@@ -241,6 +298,20 @@ footer {
         height: 40px;
     }
 
+    .sidebar-header .sidebar-toggler {
+        display: none;
+    }
+    
+    .sidebar-header .menu-toggler {
+        display: block;
+        height: 30px;
+        width: 30px;
+    }
+
+    .sidebar-toggler .menu-toggler span {
+        font-size: 1.3rem;
+    }
+
     .sidebar-nav .nav-list {
         padding: 0 10px;
     }
@@ -254,6 +325,20 @@ footer {
     .sidebar-nav .nav-link .nav-icon {
         font-size: 1.37rem;
     }
+
+    .sidebar-nav .secondary-nav {
+        position: relative;
+        bottom: 0;
+        margin: 0px 0px 30px;
+    }
+
+    footer {
+        width: 85vw !important;
+        .fp {
+            font-size: 0.45rem !important;
+        }
+    }
+    
 }
 
 .infobox {
@@ -262,12 +347,13 @@ footer {
     color: #f5f5f5;
     background: #1c1c1c;
     border: 1px solid #f3f3f310;
+    width: 100%;
     width: 800px;
     border-radius: 15px;
     
     .infoname {
         padding: 20px 0px 0px 20px;
-        font-size: 30px !important;
+        font-size: 2rem !important;
     }
 
     .sysl {
@@ -313,6 +399,31 @@ footer {
     color: #858585;
     }
 }
+
+.btnhsen {
+    margin: 250px;
+    padding: 50px;
+    font-family: "Open Sans", sans-serif;
+    background: #1c1c1c;
+    border: 1px solid #f3f3f310;
+    border-radius: 20px;
+    a {
+        text-decoration: none;
+        color: #858585 !important;
+    };
+}
+
+.btnhsen a:hover {
+    color: #f5f5f5 !important;
+}
+
+.btnmid {
+    font-size: 50px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+  }
 
 #main-content {
     padding-bottom: 0;
